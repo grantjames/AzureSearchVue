@@ -1,28 +1,14 @@
 <template>
-    <nav class="level">
-        <div class="level-left">
-            <div class="level-item">
-                <p class="subtitle is-5">
-                    <strong>Azure Search</strong> Vue Demo
-                </p>
-            </div>
-            <div class="level-item">
-                <div class="field has-addons">
-                    <div class="control">
-                        <input class="input" type="text" placeholder="Film name or actor" v-model="searchTerm">
-                    </div>
-                    <div class="control">
-                        <a class="button is-info" @click="search">
-                            Search
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="field has-addons">
+        <div class="control">
+            <input class="input" type="text" placeholder="Film name or actor" v-model="searchTerm">
         </div>
-    </nav>
-
-
-    
+        <div class="control">
+            <a class="button is-info" @click="search">
+                Search
+            </a>
+        </div>
+    </div>
 </template>
 
 <script>
